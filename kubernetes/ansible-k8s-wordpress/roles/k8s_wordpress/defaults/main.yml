@@ -1,0 +1,3 @@
+efs_volume:
+ mysql: "{{ AZ }}.{{ DNS_NAME_MYSQL }}"   
+ wordpress: "{{ AZ }}.{{ DNS_NAME_WP }}"

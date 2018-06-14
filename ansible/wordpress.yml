@@ -1,0 +1,7 @@
+- hosts: tag_server_role_web
+  become: yes
+  remote_user: ubuntu
+  vars_files:
+    - "password_vars/tag_server_role_web"
+  roles:
+    - wordpress

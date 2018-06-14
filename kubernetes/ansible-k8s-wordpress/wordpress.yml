@@ -1,0 +1,9 @@
+---
+- name: icflix | Playbook kubernetes-wordpress
+  hosts: kubernetes
+  connection: local
+  vars_files:
+   - "password_vars/{{ deploy_env }}"
+  roles:
+    - k8s_wordpress
+

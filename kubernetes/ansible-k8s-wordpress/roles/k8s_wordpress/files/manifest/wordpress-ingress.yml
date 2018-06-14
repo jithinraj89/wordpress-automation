@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: wordpress-ingress
+spec:
+  tls:
+  - hosts:
+    - wordpress.icflix.com
+    secretName: tls-secret
+  rules:
+  - host: wordpress.icflix.com
+    http:
+      paths:
+      - backend:
+          serviceName: wordpress
+          servicePort: 30000
+        path: /

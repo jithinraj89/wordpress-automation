@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: wordpress-ingress
+spec:
+  tls:
+  - hosts:
+    - "{{ wordpress.url }}"
+    secretName: tls-secret
+  rules:
+  - host: "{{ wordpress.url }}"
+    http:
+      paths:
+      - backend:
+          serviceName: wordpress
+          servicePort: 30000
+        path: /

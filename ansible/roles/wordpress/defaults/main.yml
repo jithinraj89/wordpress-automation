@@ -1,0 +1,20 @@
+---
+WEBSITE_NAME: ""
+DB_HOSTNAME: ""
+DB_NAME: ""
+DB_USERNAME: ""
+DB_PASSWORD: ""
+
+
+website_name: "{{ WEBSITE_NAME }}"
+wordpress_dir: /var/www
+wordpress_url: http://wordpress.org/latest.tar.gz
+connections: 1024 #Nginx Connection
+
+# Database settings
+db_hostname: "{{ DB_HOSTNAME }}" 
+db_name: "{{ DB_NAME }}"
+db_username: "{{ DB_USERNAME }}"
+db_password: "{{ DB_PASSWORD }}"
+
+ 

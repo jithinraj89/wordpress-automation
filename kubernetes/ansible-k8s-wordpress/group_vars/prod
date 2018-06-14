@@ -1,0 +1,11 @@
+---
+deploy_env: prod
+environment_type: prod
+base_domain: icflix.com      ## You need to change this variable for k8s ingress to work   
+AZ: "us-west-2a"             ## Add the availability zone for the efs volumes as mentioned in terraform.tfvars 
+
+
+wordpress:
+  url: "wordpress.{{ base_domain }}"
+  namespace: wordpress
+  path: /tmp/manifest

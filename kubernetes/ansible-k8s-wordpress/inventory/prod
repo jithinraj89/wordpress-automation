@@ -1,0 +1,5 @@
+[prod:children]
+kubernetes
+
+[kubernetes]
+k8s.icflix.com ansible_ssh_host=k8s.icflix.com  ## change this to icflix kubernetes domain name.
