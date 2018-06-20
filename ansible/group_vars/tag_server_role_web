@@ -1,7 +1,5 @@
 ## Fillup these variables as per the company requirements.
 
-subdomain: icflix
-WEBSITE_NAME: "wordpress.{{ subdomain }}.com"
 DB_HOSTNAME: ## Ignore this for fully automated deployment.
 DB_NAME: "wordpress"
 DB_USERNAME: "awsroot"
