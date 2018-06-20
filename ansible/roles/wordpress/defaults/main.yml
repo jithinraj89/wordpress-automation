@@ -6,7 +6,7 @@ DB_USERNAME: ""
 DB_PASSWORD: ""
 
 
-website_name: "{{ WEBSITE_NAME }}"
+website_name: wordpress
 wordpress_dir: /var/www
 wordpress_url: http://wordpress.org/latest.tar.gz
 connections: 1024 #Nginx Connection
