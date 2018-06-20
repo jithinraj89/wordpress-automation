@@ -88,11 +88,11 @@ module "elb" {
 	instance_id = "${module.ec2.ec2_id}"
 }
 
-module "route53" {
-	source = "./modules/route53"
-	hosted_zone_id = "${var.hosted_zone_id}"
-	domain_name = "${var.domain_name}"
-	elb_address = "${module.elb.elb_dns_name}"
-	elb_zone_id = "${module.elb.elb_zone_id}"
+# module "route53" {
+# 	source = "./modules/route53"
+# 	hosted_zone_id = "${var.hosted_zone_id}"
+# 	domain_name = "${var.domain_name}"
+# 	elb_address = "${module.elb.elb_dns_name}"
+# 	elb_zone_id = "${module.elb.elb_zone_id}"
 
-}
+# }
