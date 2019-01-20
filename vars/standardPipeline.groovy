@@ -25,6 +25,8 @@ def call(body) {
                     
                     steps {
                         script {
+                                
+                                
                             if (params.REQUESTED_ACTION == 'rabbitmq'){
                                 echo 'Depoying rabbitmq '
                                 sh "cd ${PATH}/${config.jobName} && sudo cat README.md"
@@ -33,5 +35,5 @@ def call(body) {
                     }
                 }
             }
-
-
+        }
+}
