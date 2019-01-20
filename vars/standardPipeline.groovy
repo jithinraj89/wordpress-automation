@@ -29,7 +29,7 @@ def call(body) {
                                 
                             if (params.REQUESTED_ACTION == 'rabbitmq'){
                                 echo 'Depoying rabbitmq '
-                                sh "cd ${PATH} && sudo ls README.md"
+                                sh "cd ${PATH} && sudo ls -l"
                             }
                         }
                     }
