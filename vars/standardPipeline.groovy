@@ -1,7 +1,7 @@
 def call(body) {
 
         def config = [:]
-        def PLAYBOOK_PATH = "/var/lib/jenkins/workspace"
+        def PATH = "/var/lib/jenkins/workspace"
         body.resolveStrategy = Closure.DELEGATE_FIRST
         body.delegate = config
         
@@ -27,7 +27,7 @@ def call(body) {
                         script {
                             if (params.REQUESTED_ACTION == 'rabbitmq'){
                                 echo 'Depoying rabbitmq '
-                                sh "cd ${PLAYBOOK_PATH}/${config.jobName} && sudo cat README.md"
+                                sh "cd ${PATH}/${config.jobName} && sudo cat README.md"
                             }
                         }
                     }
