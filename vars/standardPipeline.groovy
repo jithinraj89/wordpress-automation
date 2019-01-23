@@ -15,7 +15,7 @@ def call(body) {
              parameters {
                 choice(
                     // choices are a string of newline separated values
-                    choices: 'rabbitmq\nredis\ntusker\npheme\ndroms\nopenadr2b\nceep\ndianoga\ncascade\nrtcc\nfam-backend\nall',
+                    choices: 'rabbitmq\nredis\nall',
                     description: '',
                     name: 'REQUESTED_ACTION')
             }
